@@ -1,0 +1,109 @@
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+  color: hsl(237, 12%, 33%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+main {
+  background-color: white;
+  margin: 1rem;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+header {
+  margin-top: -180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 5.5rem 0 1.5rem 0;
+  text-align: center;
+  color: hsl(238, 29%, 16%);
+}
+
+.pattern {
+  position: relative;
+  top: 100px;
+  left: 15px;
+}
+
+.illustration {
+  position: relative;
+  top: 210px;
+}
+
+.question-answer-tab {
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+  padding: 0.3em;
+}
+
+.question-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-tab {
+  display: none;
+  color: hsl(240, 6%, 50%);
+}
+
+.toggle-icon {
+  order: 2;
+}
+
+.toggle-icon:hover + .question {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    display: flex;
+    background-color: white;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    margin: 10% auto;
+    border-radius: 20px;
+    padding-bottom: 2rem;
+    height: 55vh;
+    overflow: hidden;
+  }
+
+  main {
+    width: 50%;
+  }
+
+  header {
+  width: 50%;
+  }
+
+  h1 {
+    margin: 2rem 2rem 1rem 0;
+    text-align: left;
+  }
+  .desktop-box {
+    z-index: 3;
+    position: absolute;
+    left: 14.1%;
+    top: 45%;
+  }
+  .illustration {
+    position: relative;
+    top: 590px;
+    left: -70px;
+    z-index: 2;
+  }
+  .pattern {
+    position: relative;
+    top: -25%;
+    left: -70%;
+    z-index : 1;
+  }
+}
